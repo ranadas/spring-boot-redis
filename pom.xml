@@ -16,10 +16,6 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
 
-    <build>
-        <finalName>${artifactId}</finalName>
-    </build>
-
     <dependencyManagement>
         <dependencies>
             <dependency>

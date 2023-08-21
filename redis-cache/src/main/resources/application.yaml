@@ -1,0 +1,7 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /rca
+spring:
+  application:
+    name: "Redis Cache App"

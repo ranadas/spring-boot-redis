@@ -5,3 +5,18 @@ server:
 spring:
   application:
     name: "Redis Cache App"
+  data:
+    redis:
+      database: 0
+      host: localhost
+      port: 6379
+      username: default
+      password: cachepass01
+  cache:
+    type: redis
+    redis:
+      cache-null-values: true
+      time-to-live: 300s
+      key-prefix: myapp-cache
+      use-key-prefix: true
+      enable-transaction-support: true
